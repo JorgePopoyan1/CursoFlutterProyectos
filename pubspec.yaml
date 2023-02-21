@@ -1,0 +1,37 @@
+name: platzi_trips_app
+description: Es mi primera app utilizando Flutter
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/img/turista.jpg
+    - assets/img/pao.png
+    - assets/img/pareja.png
+    - assets/img/grupo.png
+    - assets/img/profile.jpg
+    - assets/img/lagunap.jpg
+    - assets/img/laguna1.jpg
+    - assets/img/laguna2.jpg
+    - assets/img/laguna3.jpg
+    - assets/img/laguna4.jpg
+    - assets/img/land1.jpg
+    - assets/img/paisaje.jpg
+  fonts:
+  - family: Roboto
+    fonts:
+      - asset: fonts/Lato-ThinItalic.ttf
+      - asset: fonts/RobotoCondensed-Light.ttf
