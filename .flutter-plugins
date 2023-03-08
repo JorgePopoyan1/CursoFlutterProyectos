@@ -1,0 +1,19 @@
+# This is a generated file; do not edit or check into version control.
+cloud_firestore=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-3.4.5/
+cloud_firestore_web=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_web-2.8.5/
+firebase_auth=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-3.4.2/
+firebase_auth_web=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth_web-4.0.0/
+firebase_core=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.21.0/
+firebase_core_web=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core_web-1.7.1/
+firebase_storage=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-10.3.6/
+firebase_storage_web=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage_web-3.3.4/
+flutter_blue=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blue-0.8.0/
+flutter_plugin_android_lifecycle=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.7/
+google_sign_in=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-5.4.3/
+google_sign_in_android=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_android-6.1.5/
+google_sign_in_ios=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_ios-5.5.1/
+google_sign_in_web=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_web-0.10.2+1/
+image_picker=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.6+1/
+image_picker_android=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_android-0.8.5+5/
+image_picker_for_web=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_for_web-2.1.10/
+image_picker_ios=/home/jorge/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_ios-0.8.6+6/

@@ -48,15 +48,15 @@ class CloudFirestoreApi {
   List<PlaceInfo> buildPlaces(List<DocumentSnapshot> placesListSnapshot) {
     List<PlaceInfo> profilePlaces = [];
     placesListSnapshot.forEach((element) {
-      profilePlaces.add(
-          PlaceInfo(
-            Place(
-              name: element ['name'],
-              description: element ['description'],
-              urlImage: element ['urlImage'],
-            ),
-          ));
-      });
+      profilePlaces.add(PlaceInfo(
+        Place(
+          name: element['name'],
+          description: element['description'],
+          urlImage: element['urlImage'],
+          likes: element['likes'],
+        ),
+      ));
+    });
     return profilePlaces;
   }
 }
