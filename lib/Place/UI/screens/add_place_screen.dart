@@ -1,6 +1,8 @@
 import 'dart:io';
 
-import 'package:flutter/cupertino.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:platzi_trips_app/Place/UI/widgets/card_image.dart';
@@ -13,7 +15,7 @@ import 'package:platzi_trips_app/Widgets/text_input.dart';
 import 'package:platzi_trips_app/Widgets/title_header.dart';
 
 class AddPlaceScreen extends StatefulWidget {
-  File image;
+  final File image;
 
   AddPlaceScreen({Key key, this.image});
 
@@ -67,10 +69,12 @@ class _AddPlaceScreen extends State<AddPlaceScreen> {
               Container(
                 alignment: Alignment.center,
                 child: CardImageWithFabIcon(
-                  pathImage: widget.image.path, //widget.image.path,
+                  pathImage: widget.image.path,
+                  //widget.image.path,
                   iconData: Icons.camera_alt,
                   width: 350.0,
                   height: 250.0,
+                  onPressedFabIcon: null,
                 ),
               ), //Foto
               Container(
@@ -93,23 +97,40 @@ class _AddPlaceScreen extends State<AddPlaceScreen> {
                 child: TextInputLocation(
                   hintText: "Agregar Ubicacion",
                   iconData: Icons.location_on,
+                  controller: _controllerDescriptionPlace,
                 ),
               ),
               Container(
                 width: 70.0,
                 child: ButtonPurple(
                   buttonText: "Agregar Lugar",
-                  onPressed: () {
-                    //1. Firebase Storage: url
-                    //2. Cloud Firestore: Place-title, description, url, userOwner, likes
-                    userBloc.updatePlaceData(Place(
+                  onPressed: () async {
+                    try {
+                      //1. Firebase Storage: url
+                      User user = FirebaseAuth.instance.currentUser;
+                      String imageUrl;
+                      if (user != null) {
+                        String uid = user.uid;
+                        String path = "${uid}/${DateTime.now().toString()}.jpg";
+                        imageUrl = await userBloc.uploadFile(path,
+                            widget.image);
+                      }
+
+                      //2. Cloud Firestore: Place-title, description, urlImage, userOwner, likes
+                      userBloc
+                          .updatePlaceData(Place(
                         name: _controllerTitlePlace.text,
                         description: _controllerDescriptionPlace.text,
+                        urlImage: imageUrl,
                         likes: 0,
-                    )).whenComplete(() {
-                      print("Termino");
-                      Navigator.pop(context);
-                    });
+                      ))
+                          .whenComplete(() {
+                        print("TERMINO");
+                        Navigator.pop(context);
+                      });
+                    }catch (e) {
+                      print(e);
+                    }
                   },
                 ),
               )

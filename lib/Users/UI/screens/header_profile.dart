@@ -14,7 +14,7 @@ class HeaderProfile extends StatelessWidget {
     userBloc = BlocProvider.of<UserBloc>(context);
 
     return StreamBuilder(
-      stream: userBloc.streanFirebase,
+      stream: userBloc.streamFirebase,
       // ignore: missing_return
       builder: (BuildContext context, AsyncSnapshot snapshot){
         switch(snapshot.connectionState){

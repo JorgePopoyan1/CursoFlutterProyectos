@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/Place/UI/widgets/card_image.dart';
 
 class CardImageList extends StatelessWidget {
-  double width = 350.0;
-  double height = 450;
-  double left = 30.0;
 
   @override
   Widget build(BuildContext context) {
+    double width = 350.0;
+    double height = 450;
+    //double left = 30.0;
     return Container(
       height: 380.0,
       child: ListView(

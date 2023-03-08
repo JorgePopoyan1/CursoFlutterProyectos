@@ -18,6 +18,7 @@ dependencies:
   firebase_storage: ^10.3.6
   cloud_firestore: ^3.4.5
   image_picker: ^0.8.6+1
+  flutter_blue: ^0.8.0
 
 dev_dependencies:
   flutter_test:
@@ -27,25 +28,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/img/turista.jpg
-    - assets/img/pao.png
-    - assets/img/pareja.png
-    - assets/img/grupo.png
-    - assets/img/profile.jpg
-    - assets/img/lagunap.jpg
-    - assets/img/laguna1.jpg
-    - assets/img/laguna2.jpg
-    - assets/img/laguna3.jpg
-    - assets/img/laguna4.jpg
-    - assets/img/land1.jpg
-    - assets/img/paisaje.jpg
-    - assets/img/maxresdefault.jpg
-    - assets/img/Laguna-Brava-Yalambojoch.jpg
-    - assets/img/image12.jpeg
-    - assets/img/image14.jpeg
-    - assets/img/Cenote-de-Laguna-Brava-Nenton-en-Huehuetenango-1024x767.jpg
+    - assets/img/
   fonts:
-  - family: Roboto
+  - family: Lato
     fonts:
       - asset: fonts/Lato-ThinItalic.ttf
-      - asset: fonts/RobotoCondensed-Light.ttf
