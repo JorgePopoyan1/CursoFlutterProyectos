@@ -1,20 +1,18 @@
 {
-  "version": 3,
+  "version": 2,
   "artifactType": {
     "type": "APK",
     "kind": "Directory"
   },
   "applicationId": "com.example.platzi_trips_app",
-  "variantName": "debug",
+  "variantName": "processDebugResources",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
-      "attributes": [],
       "versionCode": 1,
-      "versionName": "0.1.0",
+      "versionName": "3.3.0",
       "outputFile": "app-debug.apk"
     }
-  ],
-  "elementType": "File"
+  ]
 }

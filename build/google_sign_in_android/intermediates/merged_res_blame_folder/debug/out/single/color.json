@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/jorge/StudioProjects/platzi_trips_app/build/google_sign_in_android/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/jorge/.gradle/caches/transforms-3/fbf4c2f2c8f11a8d88e4e3547ff4c989/transformed/jetified-play-services-base-18.0.1/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/jorge/StudioProjects/platzi_trips_app/build/google_sign_in_android/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/jorge/.gradle/caches/transforms-3/fbf4c2f2c8f11a8d88e4e3547ff4c989/transformed/jetified-play-services-base-18.0.1/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/jorge/StudioProjects/platzi_trips_app/build/google_sign_in_android/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/home/jorge/.gradle/caches/transforms-3/fbf4c2f2c8f11a8d88e4e3547ff4c989/transformed/jetified-play-services-base-18.0.1/res/color/common_google_signin_btn_tint.xml"
+    }
+]

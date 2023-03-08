@@ -1,16 +1,33 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.platzi_trips_app-mergeDebugResources-9:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "/home/jorge/StudioProjects/platzi_trips_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "/home/jorge/.gradle/caches/transforms-3/4ca28c4a71705f8a687c69dda140a277/transformed/core-1.6.0/res/values-en-rXC/values-en-rXC.xml",
+                    "source": "/home/jorge/.gradle/caches/transforms-3/897f6548b072c351872d4926d7356d7c/transformed/core-1.8.0/res/values-en-rXC/values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endColumns": "203",
                         "endOffsets": "254"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "867",
+                        "endColumns": "203",
+                        "endOffsets": "1066"
+                    }
+                },
+                {
+                    "source": "/home/jorge/.gradle/caches/transforms-3/3f1ed9c89aad47ca01c7722def8c2afa/transformed/browser-1.4.0/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,255,454,665",
+                        "endColumns": "199,198,210,201",
+                        "endOffsets": "250,449,660,862"
                     }
                 }
             ]

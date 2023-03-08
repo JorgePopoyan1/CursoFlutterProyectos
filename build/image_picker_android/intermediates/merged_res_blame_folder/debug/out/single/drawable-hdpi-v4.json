@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/jorge/StudioProjects/platzi_trips_app/build/image_picker_android/intermediates/res/merged/debug/drawable-hdpi-v4/notification_bg_normal.9.png",
+        "source": "/home/jorge/.gradle/caches/transforms-3/897f6548b072c351872d4926d7356d7c/transformed/core-1.8.0/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/jorge/StudioProjects/platzi_trips_app/build/image_picker_android/intermediates/res/merged/debug/drawable-hdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "/home/jorge/.gradle/caches/transforms-3/897f6548b072c351872d4926d7356d7c/transformed/core-1.8.0/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/jorge/StudioProjects/platzi_trips_app/build/image_picker_android/intermediates/res/merged/debug/drawable-hdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "/home/jorge/.gradle/caches/transforms-3/897f6548b072c351872d4926d7356d7c/transformed/core-1.8.0/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/jorge/StudioProjects/platzi_trips_app/build/image_picker_android/intermediates/res/merged/debug/drawable-hdpi-v4/notification_bg_low_normal.9.png",
+        "source": "/home/jorge/.gradle/caches/transforms-3/897f6548b072c351872d4926d7356d7c/transformed/core-1.8.0/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/jorge/StudioProjects/platzi_trips_app/build/image_picker_android/intermediates/res/merged/debug/drawable-hdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "/home/jorge/.gradle/caches/transforms-3/897f6548b072c351872d4926d7356d7c/transformed/core-1.8.0/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    }
+]

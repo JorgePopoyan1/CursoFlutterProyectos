@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../Widgets/Button.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
@@ -22,7 +21,7 @@ class DescriptionPlace extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final star_half = Container(
-      margin: EdgeInsets.only(top: 330.0, right: 6.0),
+      margin: EdgeInsets.only(top: 400.0, right: 6.0),
       child: Icon(
         Icons.star_half,
         color: Color(0xFFf2C611),
@@ -30,7 +29,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final star_border = Container(
-      margin: EdgeInsets.only(top: 330.0, right: 6.0),
+      margin: EdgeInsets.only(top: 400.0, right: 6.0),
       child: Icon(
         Icons.star_border,
         color: Color(0xFFf2C611),
@@ -38,7 +37,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final stars = Container(
-      margin: EdgeInsets.only(top: 330.0, right: 6.0),
+      margin: EdgeInsets.only(top: 400.0, right: 6.0),
       child: Icon(
         Icons.star,
         color: Color(0xFFf2C611),
@@ -49,7 +48,7 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(
-            top: 317.0,
+            top: 400.0,
             left: 35.0,
             right: 20.0,
           ),
@@ -57,7 +56,7 @@ class DescriptionPlace extends StatelessWidget {
             namePlace,
             style: TextStyle(
                 fontFamily: "Lato",
-                fontSize: 45.0,
+                fontSize: 42.5,
                 fontWeight: FontWeight.w900),
             textAlign: TextAlign.left,
           ),
@@ -68,15 +67,16 @@ class DescriptionPlace extends StatelessWidget {
             stars,
             stars,
             stars,
+            stars
             //star_half,
-            star_border
+            //star_border
           ],
         )
       ],
     );
 
     final texto = Container(
-      margin: EdgeInsets.only(top: 15.0, right: 30.0, left: 20.0),
+      margin: EdgeInsets.only(top: 10.0, right: 30.0, left: 20.0),
       child: Text(
         descriptionPlace,
         style: TextStyle(
@@ -93,7 +93,7 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         title_stars,
         texto,
-        Button("Navigate")
+
       ],
     );
   }

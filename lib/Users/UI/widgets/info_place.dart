@@ -1,69 +1,30 @@
 import 'package:flutter/material.dart';
-import 'placer.dart';
+import 'package:platzi_trips_app/Place/model/place.dart';
+import 'package:flutter/material.dart';
+
+import 'ProfilePlaceInfo.dart';
 
 class PlaceInfo extends StatelessWidget {
+  Place place;
 
-  InfoPlace placeInfo;
-
-  PlaceInfo(this.placeInfo);
+  PlaceInfo(this.place);
 
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
 
-    final place = Text(
-      this.placeInfo.place,
-      style: TextStyle(
-          fontFamily: 'Lato',
-          fontSize: 20.0,
-          fontWeight: FontWeight.bold
+    final photoCard = Container(
+      margin: EdgeInsets.only(
+          top: 10.0,
+          bottom: 70.0
       ),
-    );
-
-    final placeInfo = Padding(
-        padding: EdgeInsets.symmetric(
-            vertical: 10.0
-        ),
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                this.placeInfo.where,
-                style: TextStyle(
-                    color: Color.fromRGBO(0, 0, 0, 0.4),
-                    fontFamily: 'Lato',
-                    fontSize: 12.0,
-                    fontWeight: FontWeight.bold
-                ),
-              ),
-              Text(
-                this.placeInfo.type,
-                style: TextStyle(
-                    color: Color.fromRGBO(0, 0, 0, 0.4),
-                    fontFamily: 'Lato',
-                    fontSize: 12.0,
-                    fontWeight: FontWeight.bold
-                ),
-              )
-            ]
-        )
-    );
-
-    final steps = Text(
-      'Steps ${this.placeInfo.steps}',
-      style: TextStyle(
-          fontFamily: 'Lato',
-          fontSize: 14.0,
-          fontWeight: FontWeight.bold,
-          color: Colors.amber
-      ),
-    );
-
-    final card = Container(
-      width: screenWidth * 0.65,
+      height: 220.0,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(10.0)),
-          color: Colors.white,
+          image: DecorationImage(
+              fit: BoxFit.cover,
+              image: NetworkImage(place.urlImage)
+          ),
+          borderRadius: BorderRadius.all(Radius.circular(20.0)),
+          color: Colors.red,
           boxShadow: <BoxShadow>[
             BoxShadow(
                 color: Colors.black38,
@@ -72,26 +33,14 @@ class PlaceInfo extends StatelessWidget {
             )
           ]
       ),
-      child: Padding(
-          padding: EdgeInsets.all(15.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              place,
-              placeInfo,
-              steps
-            ],
-          )
-      ),
     );
 
     return Stack(
-      alignment: Alignment(0.8, 1.25),
+      alignment: Alignment(0.0, 0.8),
       children: <Widget>[
-        card,
-        FloatingActionButton()
+        photoCard,
+        ProfilePlaceInfo(place)
       ],
     );
   }
-
 }

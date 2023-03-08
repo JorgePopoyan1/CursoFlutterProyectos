@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips_app/Users/model/users.dart';
 
 class UserProfile extends StatelessWidget {
+  Users usuario;
 
-  String imgProfile;
-  String name;
-  String email;
-
-  UserProfile(this.imgProfile, this.name, this.email);
+  UserProfile(@required this.usuario);
 
   @override
   Widget build(BuildContext context) {
+
     final userPhoto = Container(
       width: 90.0,
       height: 90.0,
@@ -25,7 +24,8 @@ class UserProfile extends StatelessWidget {
           shape: BoxShape.circle,
           image: DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage(imgProfile)
+              //image: AssetImage(user.photoURL)
+              image: NetworkImage(usuario.photoUrl)
           )
       ),
     );
@@ -38,7 +38,7 @@ class UserProfile extends StatelessWidget {
                 bottom: 5.0
             ),
             child: Text(
-                name,
+                usuario.name,
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
@@ -48,7 +48,7 @@ class UserProfile extends StatelessWidget {
             )
         ),
         Text(
-            email,
+            usuario.email,
             style: TextStyle(
                 fontSize: 15.0,
                 color: Colors.white30,

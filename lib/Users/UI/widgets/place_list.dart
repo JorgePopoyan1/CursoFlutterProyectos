@@ -1,12 +1,25 @@
 import 'package:flutter/material.dart';
-import '../../../Place/model/place.dart';
-import 'placer.dart';
+import 'package:platzi_trips_app/Users/UI/widgets/info_place.dart';
+import 'package:platzi_trips_app/Place/model/place.dart';
 
 class PlaceList extends StatelessWidget {
+  Place place = Place(
+      name: "Knuckles Mountains Range",
+      description: "Hiking. Water fall hunting. Natural bath",
+      urlImage: "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+      likes: 3
 
-  InfoPlace info = new InfoPlace('Laguna Brava', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '123,123,123');
-  InfoPlace info2 = new InfoPlace('Mountains', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '321,321,321');
+  );
+  Place place2 = Place(
+      name: "Mountains",
+      description: "Hiking. Water fall hunting. Natural bath', 'Scenery & Photography",
+      urlImage: "https://images.unsplash.com/photo-1524654458049-e36be0721fa2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+      likes: 10
 
+  );
+  /*Place place = new Place('Knuckles Mountains Range', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '123,123,123');
+  Place place2 = new Place('Mountains', 'Hiking. Water fall hunting. Natural bath', 'Scenery & Photography', '321,321,321');
+*/
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,11 +31,10 @@ class PlaceList extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          Lugar('assets/img/land1.jpg', info),
-          Lugar('assets/img/paisaje.jpg', info2),
+          PlaceInfo(place),
+          PlaceInfo(place2),
         ],
       ),
     );
   }
-
 }

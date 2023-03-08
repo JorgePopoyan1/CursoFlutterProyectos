@@ -1,19 +1,28 @@
 name: platzi_trips_app
 description: Es mi primera app utilizando Flutter
 publish_to: 'none'
-version: 0.1.0
+version: '3.3.0'
 
 environment:
-  sdk: '>=2.7.0 <3.0.0'
+  sdk: '>2.10.0 <3.0.0'
+  flutter: '1.22.4'
 
 dependencies:
   flutter:
     sdk: flutter
 
+  generic_bloc_provider: ^2.1.1
+  firebase_core: ^1.21.0
+  firebase_auth: ^3.4.2
+  google_sign_in: ^5.4.3
+  firebase_storage: ^10.3.6
+  cloud_firestore: ^3.4.5
+  image_picker: ^0.8.6+1
+
 dev_dependencies:
   flutter_test:
-    sdk: flutter
-  flutter_lints: ^1.0.4
+      sdk: flutter
+  #flutter_lints: ^1.0.4
 
 flutter:
   uses-material-design: true
@@ -30,6 +39,11 @@ flutter:
     - assets/img/laguna4.jpg
     - assets/img/land1.jpg
     - assets/img/paisaje.jpg
+    - assets/img/maxresdefault.jpg
+    - assets/img/Laguna-Brava-Yalambojoch.jpg
+    - assets/img/image12.jpeg
+    - assets/img/image14.jpeg
+    - assets/img/Cenote-de-Laguna-Brava-Nenton-en-Huehuetenango-1024x767.jpg
   fonts:
   - family: Roboto
     fonts:

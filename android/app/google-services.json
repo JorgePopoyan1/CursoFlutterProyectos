@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "619734331818",
+    "project_id": "viajes-guate",
+    "storage_bucket": "viajes-guate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619734331818:android:28ab3732ce089c38163bd3",
+        "android_client_info": {
+          "package_name": "com.example.platzi_trips_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619734331818-lps3ev3s553hta2fersckl8oih2oq3fe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.platzi_trips_app",
+            "certificate_hash": "d63c0f7def0d9e4a45523c58001ad9f36ab39f6b"
+          }
+        },
+        {
+          "client_id": "619734331818-heqjf064vlh1mu4q8iutv56ikbpu4dhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA32V_GyG1MACWdJGpZkjUw-W91Uru3F-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619734331818-7k6gjjgn5565gqo8no5jij8115djprk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

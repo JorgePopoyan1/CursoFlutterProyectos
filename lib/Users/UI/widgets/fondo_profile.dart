@@ -12,7 +12,7 @@ class FondoProfile extends StatelessWidget {
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [
-                Color(0xFFbfeb91),
+                Color(0xFF4268D3),
                 Color(0xFF584CD1)
               ],
               begin: FractionalOffset(0.2, 0.0),
@@ -35,5 +35,4 @@ class FondoProfile extends StatelessWidget {
       ),
     );
   }
-
 }
