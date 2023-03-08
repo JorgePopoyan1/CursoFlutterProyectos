@@ -25,7 +25,7 @@ class PlaceList extends StatelessWidget {
                 return CircularProgressIndicator();
               default:
                 return Column(
-                  children: userBloc.buildPLaces(snapshot.data.docs),
+                  children: userBloc.buildMyPLaces(snapshot.data.docs),
                 );
             }
           }),
