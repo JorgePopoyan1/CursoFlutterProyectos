@@ -5,9 +5,9 @@ import 'package:platzi_trips_app/Users/model/users.dart';
 import '../widgets/user_profile.dart';
 
 class HeaderProfile extends StatelessWidget {
-  Users usuario;
+  final Users user;
 
-  HeaderProfile(this.usuario);
+  HeaderProfile(this.user);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class HeaderProfile extends StatelessWidget {
           Row(
             children: <Widget>[title],
           ),
-          UserProfile(usuario),
+          UserProfile(user),
           ButtonsBar()
         ],
       ),
@@ -48,11 +48,11 @@ class HeaderProfile extends StatelessWidget {
     } else {
       print("Logeado");
       print(snapshot.data);
-      usuario = Users(
+      /*user = Users(
         name: snapshot.data.displayName,
         email: snapshot.data.email,
         photoUrl: snapshot.data.photoURL,
-      );
+      );*/
       final title = Text(
         'Profile',
         style: TextStyle(
@@ -69,7 +69,7 @@ class HeaderProfile extends StatelessWidget {
             Row(
               children: <Widget>[title],
             ),
-            UserProfile(usuario),
+            UserProfile(user),
             ButtonsBar()
           ],
         ),

@@ -81,7 +81,6 @@ MERGED from [:cloud_firestore] /home/jorge/StudioProjects/platzi_trips_app/build
 MERGED from [:firebase_core] /home/jorge/StudioProjects/platzi_trips_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:image_picker_android] /home/jorge/StudioProjects/platzi_trips_app/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [:flutter_plugin_android_lifecycle] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_blue] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:google_sign_in_android] /home/jorge/StudioProjects/platzi_trips_app/build/google_sign_in_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.0] /home/jorge/.gradle/caches/transforms-3/8aef2367978a9929e1ac1f6f18bd936d/transformed/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.1.0] /home/jorge/.gradle/caches/transforms-3/584b1e3bf49716cbe3f7728168b3cc5a/transformed/jetified-firebase-analytics-ktx-21.1.0/AndroidManifest.xml:2:1-17:12
@@ -137,9 +136,9 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/jorge/.gradle/caches/t
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/jorge/.gradle/caches/transforms-3/e0f9639f6d2bb7590de8e196f7f83dd3/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jorge/.gradle/caches/transforms-3/ddbff87a6587b0ea9fe53869d6b21af0/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/jorge/.gradle/caches/transforms-3/f275a545ecd6d64ed772f41d80633b29/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/jorge/.gradle/caches/transforms-3/682032232023cf1665021ea0484c7f29/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.44.1] /home/jorge/.gradle/caches/transforms-3/a557699ac2ee9545f152bf1548c2f7a8/transformed/jetified-grpc-android-1.44.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/jorge/.gradle/caches/transforms-3/7ab9fd918dc5417e026cdaf1c7622b04/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/jorge/.gradle/caches/transforms-3/682032232023cf1665021ea0484c7f29/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 INJECTED from /home/jorge/StudioProjects/platzi_trips_app/android/app/src/debug/AndroidManifest.xml:1:1-8:12
 INJECTED from /home/jorge/StudioProjects/platzi_trips_app/android/app/src/debug/AndroidManifest.xml:1:1-8:12
 INJECTED from /home/jorge/StudioProjects/platzi_trips_app/android/app/src/debug/AndroidManifest.xml:1:1-8:12
@@ -173,8 +172,6 @@ MERGED from [:image_picker_android] /home/jorge/StudioProjects/platzi_trips_app/
 MERGED from [:image_picker_android] /home/jorge/StudioProjects/platzi_trips_app/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_blue] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_blue] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in_android] /home/jorge/StudioProjects/platzi_trips_app/build/google_sign_in_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in_android] /home/jorge/StudioProjects/platzi_trips_app/build/google_sign_in_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /home/jorge/.gradle/caches/transforms-3/8aef2367978a9929e1ac1f6f18bd936d/transformed/multidex-2.0.0/AndroidManifest.xml:20:5-43
@@ -285,12 +282,12 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jorge/.gradle/cache
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jorge/.gradle/caches/transforms-3/ddbff87a6587b0ea9fe53869d6b21af0/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/jorge/.gradle/caches/transforms-3/f275a545ecd6d64ed772f41d80633b29/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/jorge/.gradle/caches/transforms-3/f275a545ecd6d64ed772f41d80633b29/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/jorge/.gradle/caches/transforms-3/682032232023cf1665021ea0484c7f29/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/jorge/.gradle/caches/transforms-3/682032232023cf1665021ea0484c7f29/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.44.1] /home/jorge/.gradle/caches/transforms-3/a557699ac2ee9545f152bf1548c2f7a8/transformed/jetified-grpc-android-1.44.1/AndroidManifest.xml:5:5-7:41
 MERGED from [io.grpc:grpc-android:1.44.1] /home/jorge/.gradle/caches/transforms-3/a557699ac2ee9545f152bf1548c2f7a8/transformed/jetified-grpc-android-1.44.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/jorge/.gradle/caches/transforms-3/7ab9fd918dc5417e026cdaf1c7622b04/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/jorge/.gradle/caches/transforms-3/7ab9fd918dc5417e026cdaf1c7622b04/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/jorge/.gradle/caches/transforms-3/682032232023cf1665021ea0484c7f29/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/jorge/.gradle/caches/transforms-3/682032232023cf1665021ea0484c7f29/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 INJECTED from /home/jorge/StudioProjects/platzi_trips_app/android/app/src/debug/AndroidManifest.xml
 INJECTED from /home/jorge/StudioProjects/platzi_trips_app/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -393,18 +390,6 @@ ADDED from [:image_picker_android] /home/jorge/StudioProjects/platzi_trips_app/b
 		ADDED from [:image_picker_android] /home/jorge/StudioProjects/platzi_trips_app/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
 	android:name
 		ADDED from [:image_picker_android] /home/jorge/StudioProjects/platzi_trips_app/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
-uses-permission#android.permission.BLUETOOTH
-ADDED from [:flutter_blue] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-68
-	android:name
-		ADDED from [:flutter_blue] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-65
-uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from [:flutter_blue] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-74
-	android:name
-		ADDED from [:flutter_blue] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-71
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from [:flutter_blue] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
-	android:name
-		ADDED from [:flutter_blue] /home/jorge/StudioProjects/platzi_trips_app/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
 meta-data#com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar
 ADDED from [com.google.firebase:firebase-analytics-ktx:21.1.0] /home/jorge/.gradle/caches/transforms-3/584b1e3bf49716cbe3f7728168b3cc5a/transformed/jetified-firebase-analytics-ktx-21.1.0/AndroidManifest.xml:11:13-13:85
 	android:value

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class FloatingActionButtonGreen extends StatefulWidget {
   final IconData iconData;
@@ -29,7 +28,6 @@ class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
       tooltip: "Fav",
       onPressed: widget.onPressed,
       child: Icon(Icons.favorite_border),
-      heroTag: null,
     );
   }
 }

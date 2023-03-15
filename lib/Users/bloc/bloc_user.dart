@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
@@ -11,16 +10,12 @@ import 'package:platzi_trips_app/Users/UI/widgets/profile_place.dart';
 import 'package:platzi_trips_app/Users/repository/auth_repository.dart';
 import 'package:platzi_trips_app/Users/repository/cloud_firestore_api.dart';
 import 'package:platzi_trips_app/Users/repository/cloud_firestore_repository.dart';
-
 import '../model/users.dart';
 
 class UserBloc implements Bloc {
   final _auth_repository = AuthRepository();
-
   Stream<User> streamFirebase = FirebaseAuth.instance.authStateChanges();
-
   Stream<User> get authStatus => streamFirebase;
-
   User get currentUser => FirebaseAuth.instance.currentUser;
 
   //Casos uso
@@ -54,7 +49,7 @@ class UserBloc implements Bloc {
               .doc("${CloudFirestoreApi().USERS}/${uid}"))
       .snapshots();
 
-  List<PlaceInfo> buildMyPLaces(List<DocumentSnapshot> placesListSnapshot) =>
+  List<PlaceInfo> buildMyPlaces(List<DocumentSnapshot> placesListSnapshot) =>
       _cloudFirestoreRepository.buildMyPlaces(placesListSnapshot);
 
   final _firebaseStorageRepository = FirebaseStorageRepository();

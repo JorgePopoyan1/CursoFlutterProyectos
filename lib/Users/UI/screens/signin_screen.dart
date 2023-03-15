@@ -46,25 +46,29 @@ class _SignInScreen extends State<SignInScreen> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text("Welcome \n This is your Travel App",
+              Text(
+                "Welcome \n This is your Travel App",
                 style: TextStyle(
                     fontSize: 37.0,
                     fontFamily: "Lato",
                     color: Colors.white,
-                    fontWeight: FontWeight.bold
-                ),
+                    fontWeight: FontWeight.bold),
               ),
-              ButtonGreen(text: "Login with Gmail",
+              ButtonGreen(
+                text: "Login with Gmail",
                 onPressed: () {
                   userBloc.signOut();
-                  userBloc.signIn().then((User usuario) {
-                    userBloc.updateUserData(Users(
-                        uid: usuario.uid,
-                        name: usuario.displayName,
-                        email: usuario.email,
-                        photoUrl: usuario.photoURL
-                    ));
-                  });
+                  userBloc.signIn().then(
+                    (User user) {
+                      userBloc.updateUserData(
+                        Users(
+                            uid: user.uid,
+                            name: user.displayName,
+                            email: user.email,
+                            photoUrl: user.photoURL),
+                      );
+                    },
+                  );
                 },
                 width: 300.0,
                 height: 50.0,

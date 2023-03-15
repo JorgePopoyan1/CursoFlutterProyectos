@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/Place/model/place.dart';
-import 'package:flutter/material.dart';
-
 import 'profile_place_info.dart';
 
 class PlaceInfo extends StatelessWidget {
-  Place place;
+  final Place place;
 
   PlaceInfo(this.place);
 

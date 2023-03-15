@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:platzi_trips_app/Users/UI/screens/signin_screen.dart';
 
 class FirebaseAuthAPI {
   final FirebaseAuth _auth = FirebaseAuth.instance;

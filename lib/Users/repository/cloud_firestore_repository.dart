@@ -18,5 +18,7 @@ class CloudFirestoreRepository {
   List<PlaceInfo> buildMyPlaces(List<DocumentSnapshot> placesListSnapshot) =>
       _cloudFirestoreAPI.mybuildPlaces(placesListSnapshot);
 
-  List<CardImageWithFabIcon> buildPlaces(List<DocumentSnapshot> placesListSnapshot) => _cloudFirestoreAPI.buildPlaces(placesListSnapshot);
+  List<CardImageWithFabIcon> buildPlaces(
+          List<DocumentSnapshot> placesListSnapshot) =>
+      _cloudFirestoreAPI.buildPlaces(placesListSnapshot);
 }

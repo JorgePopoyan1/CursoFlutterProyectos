@@ -12,24 +12,41 @@ class PlatziTripsCupertino extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: CupertinoTabScaffold(
-        tabBar: CupertinoTabBar(items: [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home, color: Colors.indigo), label: ""),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.search, color: Colors.indigo), label: ""),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.person, color: Colors.lightGreen), label: ""),
-        ]),
+        tabBar: CupertinoTabBar(
+          items: [
+            BottomNavigationBarItem(
+                icon: Icon(Icons.home, color: Color.fromARGB(255, 71, 213, 53)),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.search,
+                    color: Color.fromARGB(255, 221, 218, 54)),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.person,
+                    color: Color.fromARGB(255, 75, 207, 205)),
+                label: ""),
+          ],
+        ),
         tabBuilder: (BuildContext context, int index) {
           switch (index) {
             case 0:
               return CupertinoTabView(
-                builder: (BuildContext context) => HomeTrips(),
+                builder: (BuildContext context) {
+                  return BlocProvider(
+                    bloc: UserBloc(),
+                    child: HomeTrips(),
+                  );
+                },
               );
               break;
             case 1:
               return CupertinoTabView(
-                builder: (BuildContext context) => SearchTrips(),
+                builder: (BuildContext context) {
+                  return BlocProvider(
+                    bloc: UserBloc(),
+                    child: SearchTrips(),
+                  );
+                },
               );
               break;
             case 2:
@@ -42,6 +59,8 @@ class PlatziTripsCupertino extends StatelessWidget {
                 },
               );
               break;
+            default:
+              return Container();
           }
         },
       ),

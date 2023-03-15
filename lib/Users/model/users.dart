@@ -11,10 +11,10 @@ class Users {
 
   Users(
       {Key key,
-      @required this.uid,
-      @required this.name,
-      @required this.email,
-      @required this.photoUrl,
+      this.uid,
+      this.name,
+      this.email,
+      this.photoUrl,
       this.myPlaces,
       this.myFavoritePlaces});
 }

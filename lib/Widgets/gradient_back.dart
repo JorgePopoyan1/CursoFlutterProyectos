@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
 class GradientBack extends StatelessWidget {
-  String title = "Popular";
-  double height = 0.0;
-
+  final String title = "Popular";
+  final double height;
 
   GradientBack({Key key, this.height});
 
@@ -12,9 +11,11 @@ class GradientBack extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     double screenWidht = MediaQuery.of(context).size.width;
 
-    if (height == null) {
-      height = screenHeight;
-    }
+
+    /*if (height == null) {
+      this.height = screenHeight;
+    }*/
+
 
     return Container(
         width: screenHeight,

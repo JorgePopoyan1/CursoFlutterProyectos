@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget {
-  String namePlace;
-  double stars;
-  String descriptionPlace;
+  final String namePlace;
+  final double stars;
+  final String descriptionPlace;
 
   DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);
 
-  String descriptionDummy =
+  final String descriptionDummy =
       "La Laguna Brava es un hermoso destino natural ubicado en el municipio de Nentón, Huehuetenango. A 1142 metros de altura sobre el nivel del "
       "mar, rodeada por grandes sierras con diversa vegetación característica del altiplano guatemalteco, forma parte de una serie de 60 lagos, "
       "lagunas y cenotes que se distribuyen entre el noroccidente de Guatemala y parte de Chiapas, México. \n\n\nAl comienzo de la comunidad de "
@@ -19,7 +19,6 @@ class DescriptionPlace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final star_half = Container(
       margin: EdgeInsets.only(top: 400.0, right: 6.0),
       child: Icon(
@@ -66,8 +65,8 @@ class DescriptionPlace extends StatelessWidget {
             stars,
             stars,
             stars,
-            stars,
-            stars
+            star_half,
+            star_border
             //star_half,
             //star_border
           ],
@@ -93,7 +92,6 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         title_stars,
         texto,
-
       ],
     );
   }
